@@ -113,110 +113,42 @@
 
         <div class=" container">
             <div class="row">
-                <div class="col-12 text-center mb-5">
+                <div class="col-12 text-center mb-4">
                     <span class="hint-title"><br>Cardápio</span>
                     <h1 class="title">
                         <b>Conheça o nosso cardápio</b>
                     </h1>
                 </div>
-
+ <!-- AQUI FICA OS BOTOES PARA MUDAR O TIPO DE CATEGORIA DOS PRODUTOS -->
                 <div class="col-12 container-menu">
-                    <a href="" class="btn btn-white btn-sm mr-3 mt-3">
-                        <i class="fas fa-combos"></i> Combos
+                    <a id="menu-burgers" class="btn btn-white btn-sm mr-2 mt-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
+                        <i class="fas fa-combos"></i> Burger
                     </a>
-                    <a href="" class="btn btn-white btn-sm mr-3 mt-3">
-                        <i class="fas fa-solid fa-hotdog"></i> Dogão
+                    <a id="menu-pizzas" class="btn btn-white btn-sm mr-2 mt-3" onclick="cardapio.metodos.obterItensCardapio('pizzas')">
+                        <i class="fas fa-solid fa-hotdog"></i> Pizzas
                     </a>
-                    <a href="" class="btn btn-white btn-sm mr-3 mt-3">
-                        <i class="fas fa-solid fa-hotdog"></i> Dogão da Gringa
+                    <a id="menu-churrasco" class="btn btn-white btn-sm mr-2 mt-3" onclick="cardapio.metodos.obterItensCardapio('churrasco')">
+                        <i class="fas fa-solid fa-hotdog"></i> Churrasco
                     </a>
-                    <a href="" class="btn btn-white btn-sm mr-3 mt-3">
-                        <i class=""></i> Tapioca
+                    <a  id="menu-steaks" class="btn btn-white btn-sm mr-2 mt-3" onclick="cardapio.metodos.obterItensCardapio('steaks')">
+                        <i class=""></i> Steaks
                     </a>
-                    <a href="" class="btn btn-white btn-sm mr-3 mt-3">
-                        <i class=""></i> Cuscuz
+                    <a  id="menu-bebidas" class="btn btn-white btn-sm mr-2 mt-3" onclick="cardapio.metodos.obterItensCardapio('bebidas')">
+                        <i class=""></i> Bebidas
                     </a>
-                    <a href="" class="btn btn-white btn-sm mr-3 mt-3">
-                        <i class=""></i> Sanduiches
-                    </a>
-                    <a href="" class="btn btn-white btn-sm mr-3 mt-3">
-                        <i class=""></i> Sucos Naturais
-                    </a>
-                    <a href="" class="btn btn-white btn-sm mr-3 mt-3">
-                        <i class=""></i> Refrigerantes
+                    <a  id="menu-sobremesas" class="btn btn-white btn-sm mr-2 mt-3" onclick="cardapio.metodos.obterItensCardapio('sobremesas')">
+                        <i class=""></i> Sobremesas
                     </a>
                 </div>
 
                 <div class="col-12">
                     <div class="row" id="itensCardapio">
 
-                        <div class="col-3 mb-3">
-                            <div class="card card-item">
-                                <div class="img-produto">
-                                    <img src="/img/cardapio/combos/combo 2.png" alt="">
-                                </div>
-                                <p class="title-produto text-center mt-2">
-                                    <b>COMBO 4/1</b>
-                                </p>
-                                <p class="price-produto text-center">
-                                    <b>R$ 21,00</b>
-                                </p>
-                                <div class="add-carrinho">
-                                    <span class="btn-menos"><i class="fas fa-minus"></i></span>
-                                    <span class="btn-numero-itens">0</span>
-                                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
-                                    <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3 mb-3">
-                            <div class="card card-item">
-                                <div class="img-produto">
-                                    <img src="/img/cardapio/combos/combo 3.png" alt="">
-                                </div>
-                                <p class="title-produto text-center mt-2">
-                                    <b>COMBO 3/1</b>
-                                </p>
-                                <p class="price-produto text-center">
-                                    <b>R$ 24,00</b>
-                                </p>
-                                <div class="add-carrinho">
-                                    <span class="btn-menos"><i class="fas fa-minus"></i></span>
-                                    <span class="btn-numero-itens">0</span>
-                                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
-                                    <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3 mb-3">
-                            <div class="card card-item">
-                                <div class="img-produto">
-                                    <img src="/img/cardapio/combos/combo 4.png" alt="">
-                                </div>
-                                <p class="title-produto text-center mt-2">
-                                    <b>COMBO 4/1</b>
-                                </p>
-                                <p class="price-produto text-center">
-                                    <b>R$ 37,00</b>
-                                </p>
-                                <div class="add-carrinho">
-                                    <span class="btn-menos"><i class="fas fa-minus"></i></span>
-                                    <span class="btn-numero-itens">0</span>
-                                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
-                                    <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="btn btn-white btn-sm">Ver mais</a>
-                        </div>
-
-
                     </div>
                 </div>
-
+                <div class="col-12 text-center">
+                    <a id="btnVerMais" class="btn btn-white btn-sm" onclick="cardapio.metodos.verMais()">Ver mais</a>
+                </div>
             </div>
 
         </div>
